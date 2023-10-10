@@ -151,7 +151,95 @@
         </div>
     </section>
     <!-- Akhir Tentang -->
-
+    <head>
+        <title>Tabel Pendidikan dan Formulir</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+    
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: left;
+            }
+    
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Tabel Pendidikan</h1>
+        <table>
+            <tr>
+                <th>Tingkat Pendidikan</th>
+                <th>Keterangan Singkat</th>
+                <th>Durasi</th>
+                <th>Contoh Gelar</th>
+            </tr>
+            <tr>
+                <td>Pendidikan Prasekolah</td>
+                <td>Tingkat pendidikan sebelum masuk sekolah dasar, biasanya dimulai pada usia 3-6 tahun</td>
+                <td>1-3 tahun</td>
+                <td>Tidak ada gelar</td>
+            </tr>
+            <tr>
+                <td>Sekolah Dasar</td>
+                <td>Tingkat pendidikan dasar yang biasanya dimulai pada usia 6-7 tahun</td>
+                <td>6 tahun</td>
+                <td>Ijazah Sekolah Dasar (SD)</td>
+            </tr>
+            <tr>
+                <td>Sekolah Menengah Pertama (SMP)</td>
+                <td>Tingkat pendidikan menengah pertama yang biasanya dimulai pada usia 12-13 tahun</td>
+                <td>3 tahun</td>
+                <td>Ijazah Sekolah Menengah Pertama (SMP)</td>
+            </tr>
+            <tr>
+                <td>Sekolah Menengah Atas (SMA)</td>
+                <td>Tingkat pendidikan menengah atas yang biasanya dimulai pada usia 15-16 tahun</td>
+                <td>3 tahun</td>
+                <td>Ijazah Sekolah Menengah Atas (SMA)</td>
+            </tr>
+            <tr>
+                <td>Perguruan Tinggi</td>
+                <td>Tingkat pendidikan lanjutan setelah SMA, bisa berupa perguruan tinggi atau universitas</td>
+                <td>3-5 tahun</td>
+                <td>Sarjana (S1), Magister (S2), Doktor (S3)</td>
+            </tr>
+            <tr>
+                <td>Pendidikan Profesional</td>
+                <td>Pendidikan khusus untuk profesi tertentu seperti kedokteran, hukum, atau teknik</td>
+                <td>Bervariasi</td>
+                <td>Dokter (dr.), Advokat (SH), Insinyur (Ir.)</td>
+            </tr>
+        </table>
+    
+        <h1>Formulir Contoh</h1>
+        <form action="proses.php" method="post">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="pendidikan">Pendidikan Terakhir:</label>
+            <select id="pendidikan" name="pendidikan">
+                <option value="SMA">SMA</option>
+                <option value="D3">Diploma (D3)</option>
+                <option value="S1">Sarjana (S1)</option>
+                <option value="S2">Magister (S2)</option>
+                <option value="S3">Doktor (S3)</option>
+            </select><br><br>
+    
+            <label for="pesan">Pesan:</label><br>
+            <textarea id="pesan" name="pesan" rows="4" cols="50"></textarea><br><br>
+    
+            <input type="submit" value="Kirim">
+        </form>
 </body>
+
 
 </html>
